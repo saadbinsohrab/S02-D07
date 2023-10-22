@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container {
+            width: 250px;
+            height: 150px;
+            border: 5px solid salmon;
+            background-color: green;
+        }
+
+        .inner {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            transform: translate(50px, 5px) scale(0.5) rotate(45deg);
+            /* transform: translate(50px, 5px) scale(0.5) rotate(45deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box container">
+        <div class="inner">box1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box3</div>
+    </div>
+</body>
+</html>

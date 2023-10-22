@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+
+            background-color: red;
+            transition: width 2s linear 2s, 
+            height 4s ease-out, 
+            font-size 8s ease-out,
+            color 3s 1s, 
+            border ease-out 10s;
+        }
+        .field:hover {
+            font-size: 45px;
+            width: 150px;
+            height: 150px;
+            border: 100px solid green;
+            border-radius: 50%;
+
+        }
+
+        .luva {
+            
+            transition: transform 10s ease .5s;
+            color: wheat;
+        }
+        .field:hover .luva {
+            transform: rotate(315deg);
+            /* transform-origin: top right; */
+            color: aqua;
+        }
+
+        .forest {
+            border-radius: 2px;
+            background-color: green;
+            margin: 50px auto;
+            width: 400px;
+            height: 250px;
+        }
+        
+        .blood {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* position: relative;
+            left: 100px; */
+            
+            transition:background-color 5s ease-in-out,
+            transform 5s ease-in-out ;
+
+        }
+        .forest:hover .blood {
+            background-color: red;
+            transform: translate(100px, 25px) scale(0.75);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="area">
+        <div class="field">
+            <p class="luva">Bangladesh</p>
+        </div>
+    </div>
+
+    <div class="forest">
+        <div class="blood"></div>
+    </div>
+</body>
+</html>

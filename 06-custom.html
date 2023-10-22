@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom</title>
+    <style>
+        /* ------------------ calc is very important------------------  */
+        :root {
+            --primary-border: turquoise;
+            --secondary: hotpink;
+            --gaaar: 50% ;
+            --background: 3px solid orchid;
+
+            --primary-color: dodgerblue;
+            --secondary-color: lightcoral;
+        }
+
+        #text1 {
+            color: var(--primary-border);
+            /* border-radius: ; */
+        }
+        #text3 {
+            color: var(--primary-border);
+        }
+        #text5 {
+            color: var(--primary-border);
+        }
+        
+
+        #para1 {
+            border: var(--background);
+            background-color: var(--primary-color);
+            width: calc(100% - 200px);
+        }
+        #para2 {
+            background-color: var(--secondary);
+        }
+        #para3{
+
+            border: var(--background);
+            border-radius: var(--gaaar);
+            width: calc(100% - 200px);
+        }
+        #para4 {
+            background-color: var(--secondary);
+        }
+        #para5 {
+            background-color: var(--secondary-color);
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quisquam maiores vero, tempore obcaecati quos modi, minus perferendis magnam, nostrum repellat? Mollitia ut vitae esse enim quidem magni veniam consectetur expedita cum accusantium maiores natus quisquam ea eaque quam porro nihil id architecto facere voluptatum, inventore quis placeat repellendus suscipit? Dolores placeat in alias sapiente veniam atque velit voluptatem molestias, earum tenetur facere fugit. Reiciendis dolorem fuga id sint ipsa assumenda animi saepe repellat, unde, repudiandae esse facilis, totam vel nemo magnam fugiat deleniti minima ratione molestiae pariatur. Porro aspernatur quae odio neque nam harum nostrum voluptatum dignissimos aut! Explicabo.</p>
+
+
+    <div class="para" id="para1">
+        <h1>para1</h1>
+        <p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="para" id="para2">
+        <h1>para2</h1>
+        <p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="para" id="para3">
+        <h1>para3</h1>
+        <p id="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="para" id="para4">
+        <h1>para4</h1>
+        <p id="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="para" id="para5">
+        <h1>para5</h1>
+        <p id="text5">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+</body>
+</html>

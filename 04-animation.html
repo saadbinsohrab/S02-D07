@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+
+    <style>
+        @keyframes page {
+            1%{
+                color: yellow;
+                left: -550px;
+                top: 0;
+            }
+            25%{
+                color: chocolate;
+                left: 150px;
+                top: 0;
+                transform: scale(1.5);
+            }
+            50%{
+                color: darkred;
+                left: 400px;
+                top: 0;
+                /* transform: scale(.5); */
+            }
+            75%{
+                color: mistyrose;
+                left: 650px;
+                top: 0;
+                transform: scale(.75);
+            }
+            100%{
+                color: blue;
+                left: 1000px;
+                top: 0;
+            }
+        }
+
+        @keyframes saad {
+            1%{
+                background-color: yellow;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: chocolate;
+                left: 150px;
+                top: 75px;
+            }
+            50%{
+                background-color: darkred;
+                left: 400px;
+                top: 200px;
+                transform: scale(0.5);
+            }
+            75%{
+                background-color: mistyrose;
+                left: 650px;
+                top: 75px;
+            }
+            100%{
+                background-color: blue;
+                left: 900px;
+                top: 0px;
+            }
+        }
+
+
+        .field {
+            width: 1000px;
+            height: 300px;
+            background-color:aquamarine ;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: saad 5s linear 0s infinite forwards;
+            animation-play-state: running;
+        }
+
+        .t-p {
+            font-size: 50px;
+            position: relative;
+            animation: page 10s linear 0s infinite reverse;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="ball"></div>
+    </div>
+
+    <div class="t-p">
+        <p>This is my annother page </p>
+    </div>
+</body>
+</html>
